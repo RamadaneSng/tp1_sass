@@ -1,0 +1,55 @@
+.section-1{
+    margin: 0 auto;
+    padding:  40px;
+    border-bottom: 1px solid lightgray;
+    .img-container{
+        background: url(/assets/img/pic01.jpg) center/cover;
+        height: 500px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+   
+
+    .section1-header{
+
+        text-align: center;
+        
+        #first-p {
+                text-align: center;
+
+                
+        }
+        
+        h2{
+            font-size: 2rem;
+            width: 70%;
+            margin: 0 auto;
+            padding: 50px 0 0;
+            @media screen and (max-width: 700px) {
+                    font-size: 1.5rem;
+            
+            }
+            
+        }
+
+        #second-p{
+            width: 55%;
+            margin: 40px auto;
+            line-height: 30px;
+            font-style: italic;
+        
+        }
+
+        
+    }
+
+    button{
+        
+            text-align: center;
+            display: block;
+            margin: 40px auto;
+            
+          
+    }
+}

@@ -1,0 +1,180 @@
+footer{
+    display: flex;
+    width: 85%;
+    margin: 40px auto;
+    background: $grey2;
+    color: gray;
+    @media screen and (max-width: 800px) {
+            display: block;
+            
+            
+        }
+
+    .left{
+       
+        padding: 80px 0 60px;
+        width: 50%;
+        justify-content: flex-start;
+        border-right: 1px solid rgba(128, 128, 128, 0.219);
+
+        @media screen and (max-width: 800px) {
+                width: 100%;
+        
+        }
+
+        form{
+            width: 80%;
+            margin: 0 auto;
+            display: grid;
+            grid-gap: 20px;
+
+            input , textarea {
+                width: 100%;
+                border-radius: 4px;
+                outline: none;
+                border: 1px solid rgb(128 128 128 / 53%);
+            
+            }
+                
+            textarea{
+                height: 200px;
+                resize: none;
+                
+               
+            }
+            input[type=text]{
+
+                height: 40px;
+                outline: none;
+               
+            }
+
+            input[type=submit]{
+                width: 140px;
+                font-size: 0.7rem;
+                font-weight: bold;
+                letter-spacing: 1px;
+                padding: 10px;
+                background: white;
+                border: 2px solid rgba(0, 0, 0, 0.603);
+                color: gray;
+                border-radius: 0px;
+                text-transform: uppercase;
+                font-family: $font1;
+                cursor: pointer;
+                
+            }
+            label{
+                display: block;
+                margin: 0 0 10px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                font-size: 0.7rem;
+                font-weight: 600;
+            }
+        }
+       
+    }
+
+    .right{
+        width: 50%;
+        display: grid;
+        grid-template-rows: 25% 25% 25% 25%;
+        padding-top: 20px;
+
+        @media screen and (max-width: 800px) {
+                width: 100%;
+                
+         }
+        div {
+            display: grid;
+            position: relative;
+            grid-template-columns: 10% 80%;
+            grid-gap: 20%;
+            align-items: center;
+
+            padding: 40px ;
+            border-bottom: 1px solid rgba(128, 128, 128, 0.219);
+
+            @media screen and (max-width: 800px) {
+                    width: 80%;
+                    margin: 0 auto;
+                    padding: 40px 0;
+            
+            }
+
+            
+
+                
+
+
+            p{
+                font-size: 1rem;
+                text-align: end;
+                width: 80%;
+                text-align: left;
+                // margin: 0 70px;
+                width: 70%;
+                color: rgba(128, 128, 128, 0.753);
+                font-size: 0.7rem;
+
+                @media screen and (max-width: 446px) {
+                        width: 100%;
+                
+                }
+            }
+
+            h4{
+               text-transform: uppercase;
+               font-size: 0.7rem;
+               
+            }
+
+            &:first-child{
+                p{
+                    margin-top: 23px;
+                    line-height: 25px;
+                }
+            }
+            
+            &:last-child{
+                ul{
+                    display: flex;
+                    justify-content: space-between;
+                    // margin: 0 70px;
+                    width: 80%;
+
+                    @media screen and (max-width: 413px) {
+                            width: 85%;
+                            
+                    }
+
+                    li{
+                        height: 40px;
+                        width: 40px;
+                        border: 1px solid rgba(128, 128, 128, 0.219);
+                        border-radius: 50%;
+                        color: black;
+                        cursor: pointer;
+                        transition: 0.2s;
+
+                        &:hover{
+                            color: orange
+                        }
+                        
+                        @include center_with_flex;
+
+                        @media screen and (max-width: 800px) {
+                                height: 35px;
+                                width: 35px;
+                        }
+
+                    }
+                    
+                }
+            }
+
+           
+        }
+    }
+}

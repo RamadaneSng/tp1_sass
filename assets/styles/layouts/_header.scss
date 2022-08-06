@@ -1,0 +1,105 @@
+header{
+    min-height: 100vh;
+    text-align: center;
+    color: white;
+    margin: 0 auto;
+    width: 85%;
+    position: relative;
+    
+
+
+    &::before{
+        content: "";
+            height: 1px;
+            width: 30%;
+            background: gray;
+            position: absolute;
+            bottom: -49px;
+            right: 10%;
+            
+            @media screen and (max-width: 700px){
+                width: 25%;
+            }
+
+            @media screen and (max-width: 470px) {
+                    width: 17%;
+            }
+            
+        }
+    
+
+
+    &::after {
+            content: "";
+            height: 1px;
+            width: 30%;
+            background: gray;
+            position: absolute;
+            bottom: -49px;
+            display: block;
+            left: 10%;
+
+            @media screen and (max-width: 700px) {
+                    width: 25%;
+            }
+
+            @media screen and (max-width: 470px) {
+                width: 17%;
+            }
+        }
+
+    
+    .header-content{
+
+        min-height: 100vh;
+        @include center_with_flex;
+        flex-direction: column;
+        
+        opacity: 0;
+        transform: translateY(40px);
+        animation: headerAnime 1.5s forwards;
+
+        @keyframes headerAnime {
+            to{
+                transform: translateY(0);
+                opacity: 1;
+            }
+            
+        }
+    }
+    
+
+    h1{
+        font-size: 4rem;
+        text-transform: uppercase;
+        color: white;
+        font-weight: 600;
+        
+        margin: 0 auto;
+        letter-spacing: 10px;
+        font-family: sans-serif;
+        min-width: 65%;
+
+        @media screen and (max-width: 700px) {
+            font-size: 2rem;
+            
+        }
+
+        
+    }
+    
+    p{
+        margin:50px 0;
+        font-style: italic;
+        
+    }
+
+    span{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        border: 1px solid white;
+        @include center_with_flex;
+        margin: 0 auto;
+    }
+}
